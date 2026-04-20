@@ -1,0 +1,16 @@
+
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+
+$custom-colors: (
+  "altPrimary" : #003c7a,
+  "altSecondary": #edf1f4,
+  'altDark': #1c1f26,
+  "altMuted" : #686c6f,
+  'border': #dbe0e4,
+  'arrow': #e2ebfc
+);
+
+$theme-colors: map-merge($theme-colors , $custom-colors);
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
