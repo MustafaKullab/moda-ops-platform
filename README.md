@@ -20,7 +20,7 @@ To explore the full functionality of the application, please log in using the fo
 
 ---
 
-## Preview 
+## 📸 Preview
 <img width="1897" height="916" alt="لقطة شاشة 2026-04-21 130940" src="https://github.com/user-attachments/assets/cd976594-8a0f-49d8-84a5-f208c815ebcd" />
 
 ---
