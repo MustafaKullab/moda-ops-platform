@@ -1,5 +1,3 @@
-# 🛍️ MODA OPS Platform (Vue.js)
-
 A modern and scalable **e-commerce platform** built with **Vue.js**, combining a premium shopping experience with authentication, dashboard analytics, and user profile management.
 
 ---
@@ -9,6 +7,10 @@ A modern and scalable **e-commerce platform** built with **Vue.js**, combining a
 🔗 https://style-store-vert.vercel.app/
 
 ---
+
+## Preview 
+<img width="1897" height="916" alt="لقطة شاشة 2026-04-21 130940" src="https://github.com/user-attachments/assets/cd976594-8a0f-49d8-84a5-f208c815ebcd" />
+
 
 ## 🔐 Demo Access
 
