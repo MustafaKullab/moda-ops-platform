@@ -8,10 +8,6 @@ A modern and scalable **e-commerce platform** built with **Vue.js**, combining a
 
 ---
 
-## Preview 
-<img width="1897" height="916" alt="لقطة شاشة 2026-04-21 130940" src="https://github.com/user-attachments/assets/cd976594-8a0f-49d8-84a5-f208c815ebcd" />
-
-
 ## 🔐 Demo Access
 
 To explore the full functionality of the application, please log in using the following demo account:
@@ -24,6 +20,10 @@ To explore the full functionality of the application, please log in using the fo
 
 ---
 
+## Preview 
+<img width="1897" height="916" alt="لقطة شاشة 2026-04-21 130940" src="https://github.com/user-attachments/assets/cd976594-8a0f-49d8-84a5-f208c815ebcd" />
+
+---
 ## ✨ Features
 
 ### 🛍️ Store Experience
