@@ -1,4 +1,4 @@
-A modern and scalable **e-commerce platform** built with **Vue.js**, combining a premium shopping experience with authentication, dashboard analytics, and user profile management.
+A modern **e-commerce platform** application built with **Vue.js**, combining a premium shopping experience with simulated dashboard data and user profile management.
 
 ---
 
@@ -55,7 +55,7 @@ To explore the full functionality of the application, please log in using the fo
 ### 🧭 Pages & Navigation
 
 * Home (Hero + Featured Products)
-* Products & Categories
+* Orders
 * Dashboard
 * About (Brand story & philosophy)
 * Contact (Form + company info)
@@ -84,7 +84,7 @@ To explore the full functionality of the application, please log in using the fo
 
 This project simulates a **real-world e-commerce platform**, focusing on:
 
-* Building scalable front-end architecture
+* Building structuring a maintainable Vue.js application
 * Implementing authentication flows
 * Designing dashboard interfaces
 * Managing application state
