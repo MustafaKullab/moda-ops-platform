@@ -472,7 +472,6 @@ onUnmounted(() => {
   width: 100% !important;
   height: 100% !important;
   background-color: rgba(0, 0, 0, 0.338) !important;
-  backdrop-filter: 20px;
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
