@@ -12,8 +12,8 @@ A modern **e-commerce platform** application built with **Vue.js**, combining a 
 
 To explore the full functionality of the application, please log in using the following demo account:
 
-* **Email:** [momoana013@gmail.com](mailto:momoana013@gmail.com)
-* **Password:** 123456789
+* **Email:** admin
+* **Password:** admin
 
 > ⚠️ Authentication is required to access key features such as the dashboard, profile, and full store experience.
 > This account is for demo purposes only.
