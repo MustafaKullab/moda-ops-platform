@@ -96,8 +96,8 @@ onMounted(() => {
 
 const email = ref("");
 const password = ref("");
-const myPassword = ref("123456789");
-const myEmail = ref("momoana013@gmail.com");
+const myPassword = ref("admin");
+const myEmail = ref("admin");
 const inputPassword = ref(null);
 const isShow = ref(false);
 
