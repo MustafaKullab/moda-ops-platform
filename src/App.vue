@@ -71,9 +71,10 @@ function receiveProduct(productDetails) {
     savedInLocalStorage("products", JSON.stringify(products.value));
     //Else if length of cart < 5 and the product is not exist
   } else if (sProducts.value < 5) {
-    products.value.push({ ...productDetails });
+    products.value.push(productDetails);
     toast.success("🛒 Item added to your cart!");
     savedInLocalStorage("products", JSON.stringify(products.value));
+
     //Else (the product is new and the cart length is 5)
   } else {
     toast.error("Can't add more products in your cart!");
@@ -117,9 +118,8 @@ function updateLocalStorage() {
 }
 
 function changeState(id) {
-  newOrders.value = newOrders.value.map((order) =>
-    order.id === id ? { ...order, state: "delivered" } : order,
-  );
+  const thisOrder = newOrders.value.find((order) => order.id === id);
+  thisOrder.state = "delivered";
   savedInLocalStorage("newOrders", JSON.stringify(newOrders.value));
 }
 

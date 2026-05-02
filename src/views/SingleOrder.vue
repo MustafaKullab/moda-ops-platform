@@ -83,6 +83,7 @@ const props = defineProps({
 
 const thisOrder = ref([]);
 thisOrder.value.push(props.newOrders.filter((order) => order.id === route.params.id)[0]);
+console.log(thisOrder.value);
 </script>
 
 <style lang="scss">

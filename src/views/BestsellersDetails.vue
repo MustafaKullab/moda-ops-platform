@@ -161,6 +161,8 @@ const props = defineProps({
 });
 
 function addToCart(product) {
+  console.log(product);
+
   let finalPrice = product.price;
   if (product.limitedOffer) {
     finalPrice = product.price * 0.7;
@@ -174,7 +176,6 @@ function addToCart(product) {
     quantity: product.quantity,
   };
   emit("sendProduct", productDetails);
-  product.quantity = 1;
 }
 
 const productsFilter = computed(() => {

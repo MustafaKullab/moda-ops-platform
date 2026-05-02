@@ -155,7 +155,7 @@
                 </div>
               </div>
               <div class="totalPrice d-flex align-items-center gap-2">
-                <strong>${{ product.quantity * product.price }}</strong>
+                <strong>${{ (product.quantity * product.price).toFixed(2) }}</strong>
                 <div class="delete" ref="deleteBtn">
                   <i
                     class="bi bi-trash3 cursor-pointer"
@@ -168,7 +168,7 @@
           <div class="payDetails">
             <div class="subtotal d-flex justify-content-between">
               <strong>Subtotal:</strong>
-              <span>${{ subtotal }}</span>
+              <span>${{ subtotal.toFixed(2) }}</span>
             </div>
             <div class="shipping subtotal d-flex justify-content-between">
               <strong>Shipping:</strong>
@@ -411,6 +411,7 @@ const tax = computed(() => {
     return 20;
   }
 });
+
 const finalPrice = computed(() => {
   return (subtotal.value + shipping.value + tax.value).toFixed(2);
 });

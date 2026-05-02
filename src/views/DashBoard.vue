@@ -10,7 +10,7 @@
           <div class="information">
             <p class="heading fs-5 m-0 mb-2">Total Revenue</p>
             <div class="amount d-flex align-items-center gap-2">
-              <span class="fs-2"> ${{ totalRevenue.toLocaleString() }}</span>
+              <span class="fs-2"> ${{ totalRevenue.toFixed(2) }}</span>
               <i class="bi bi-arrow-up-right text-success fs-4"></i>
             </div>
           </div>
@@ -90,7 +90,7 @@
                   class="ratioPrecentage position-absolute text-success d-flex align-items-center gap-2"
                 >
                   <i class="bi bi-arrow-up-right"></i>
-                  <span>{{ mensCategoryPrecentage }}%</span>
+                  <span>{{ mensCategoryPrecentage.toFixed(2) }}%</span>
                 </div>
                 <div
                   class="progress bg-primary position-absolute top-0 start-0"
@@ -105,7 +105,7 @@
                   class="ratioPrecentage position-absolute text-success d-flex align-items-center gap-2"
                 >
                   <i class="bi bi-arrow-up-right"></i>
-                  <span>{{ womensCategoryPrecentage }}%</span>
+                  <span>{{ womensCategoryPrecentage.toFixed(2) }}%</span>
                 </div>
                 <div
                   class="progress bg-primary position-absolute top-0 start-0"
@@ -123,7 +123,7 @@
                   class="ratioPrecentage position-absolute text-success d-flex align-items-center gap-2"
                 >
                   <i class="bi bi-arrow-up-right"></i>
-                  <span>{{ electronicsCategoryPrecentage }}%</span>
+                  <span>{{ electronicsCategoryPrecentage.toFixed(2) }}%</span>
                 </div>
                 <div
                   class="progress bg-primary position-absolute top-0 start-0"
@@ -138,7 +138,7 @@
                   class="ratioPrecentage position-absolute text-success d-flex align-items-center gap-2"
                 >
                   <i class="bi bi-arrow-up-right"></i>
-                  <span>{{ jeweleryCategoryPrecentage }}%</span>
+                  <span>{{ jeweleryCategoryPrecentage.toFixed(2) }}%</span>
                 </div>
                 <div
                   class="progress bg-primary position-absolute top-0 start-0"
@@ -242,15 +242,6 @@ async function getProducts() {
 onMounted(() => {
   getProducts();
 });
-
-// Computed To Calculate Avg Order Value
-// const totalQuantity = computed(() => {
-//   // عشان يرجعلي مصفوفة جديدة تحتوي المصفوفة الداخلية تبعت الايتم
-//   const items = allOrders.value.flatMap((order) => order.item || []);
-
-//   // هنا الرديوس عشان نحسب الكميات كلها
-//   return items.reduce((acc, order) => acc + Number(order.quantity), 0);
-// });
 
 const avgOrderValue = computed(() => {
   return totalRevenue.value / currentOrders.value || 0;

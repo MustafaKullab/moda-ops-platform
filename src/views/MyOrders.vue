@@ -5,7 +5,7 @@
       <p class="text-uppercase m-0">track and manage your recent purchases</p>
     </div>
     <div class="container-xl">
-      <ul class="list-unstyled pb-5 m-5 m-xl-0" v-if="or !== 0">
+      <ul class="list-unstyled pb-5 m-5 m-xl-0" v-if="ordersLength !== 0">
         <li
           class="row align-items-center justify-content-between mb-4 shadow-sm rounded-3 py-2 px-4"
           v-for="order in ordersFilter"
@@ -85,7 +85,7 @@ const props = defineProps({
   },
 });
 
-const or = computed(() => {
+const ordersLength = computed(() => {
   return props.newOrders.length;
 });
 

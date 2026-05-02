@@ -162,4 +162,14 @@ input {
 .footer {
   border-top: 3px solid var(--border-color);
 }
+
+.dark-theme {
+  .main-logo {
+    .links {
+      i:hover {
+        color: white !important;
+      }
+    }
+  }
+}
 </style>
